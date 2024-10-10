@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raven, My virtual assistant</title>
+  <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  <!-- <div id="result"></div> -->
+
+  <div class="video_cont">
+  <video style="z-index: -1; width: 100%;"  autoplay muted loop id="myVideo">
+      <source src="asstets/bg.mp4" type="video/mp4">
+    </video>
+  </div>
+    
+<div style="position: absolute;" class="face">
+  <div class="eyes">
+      <div class="eye"></div>
+      <div class="eye"></div>
+  </div>
+</div>
+
+<div class="cont">
+  
+  <div class="sub_cont">
+    <h1>I'm <span id="name">r a V e n</span>, Your <span id="va">Virtual Assistant</span></h1>
+    <h2 class="sub_line">How May, I help You ? </h2>
+    <img src="asstets/voice.gif" alt="voice" id="voice">
+    <button onclick="startConverting()"  id="btn" ><img src="asstets/mic.svg" alt="mic"><span id="content"> Click here for talk to me</span> </button>
+  </div>
+
+  <footer>
+  
+  <p>All Rights Reserved @Gourav Verma</p>
+
+</footer>
+</div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+.cont{
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap:30px;
+    flex-direction: column;
+}
+.sub_cont{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 80px ;
+
+}
+
+.sub_line{
+    color: rgb(133, 133, 133);
+}
+.video_cont{
+    position: absolute;
+    max-height: 100%;
+    min-width: 100%;
+    z-index: -1;
+    overflow: hidden;
+
+
+}
+/* #logo{
+    width: 23vw;
+} */
+video{
+    min-height: 100vh;
+    bottom:0 ;
+    left: 0;
+    overflow: hidden;
+
+}
+h1{
+    color: aliceblue;
+    font-family: "Protest Guerrilla", sans-serif;
+}
+#name{
+    color:rgb(0, 255, 242);
+    /* -webkit-text-stroke: 0.1px rgb(255, 255, 255); */
+        font-size: 95px;
+}
+#va{
+    color:rgb(196, 0, 196);
+    font-size: 55px; 
+     text-shadow: 2px 2px 10px #000000;
+}
+#voice{
+    width: 100px;
+    display: none;
+   
+}
+#btn{
+background: linear-gradient(to right,rgb(21, 145, 207),rgb(201, 41, 116));
+padding: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 5px;
+font-size: 20px;
+border-radius: 20px;
+color: white;
+box-shadow: 2px 2px 10px rgb(21, 145, 207),2px 2px 10px rgb(201, 41, 116);
+border: none;
+transition: all 0.5s;
+cursor: pointer;
+}
+#btn:hover{
+    box-shadow: 2px 2px 20px rgb(21, 145, 207),2px 2px 20px rgb(201, 41, 116);
+    letter-spacing: 2px;
+}
+
+/*In this part we will make
+    the eyes of the face*/
+
+.face{
+width: 100%;
+/* height: 100vh; */
+justify-content: center;
+margin-top: 222px;
+display: flex;
+
+
+}
+
+.eyes {
+    position: relative;
+    top: -30px;
+    display: flex;
+}
+
+.eyes .eye {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    display: block;
+    background: #fff;
+    margin: 10px 10px 0px 39px;
+    border-radius: 50%;
+}
+
+.eyes .eye::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background: #000;
+    border-radius: 50%;
+}
+
+
+/* #result{
+    height: 200px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 30px;
+    width: 500px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 0 10px 0 #bbb;
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 25px;
+    color: white;
+    position: absolute;
+} */
+
+.btn_speak{
+    font-size: 20px;
+    position: absolute;
+    top: 240px;
+    left: 50%;
+}
+
+
+footer{
+    all: unset;
+    color: white;
+    position: absolute;
+text-align: left;
+display: flex;
+width: 100%;
+}
+
